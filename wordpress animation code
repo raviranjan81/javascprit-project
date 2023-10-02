@@ -1,0 +1,225 @@
+Remove Input Outline
+
+selector input[type=email]:focus{
+  box-shadow: none;
+}
+
+Remove Button Global Settings
+selector .elementor-button{
+    border: none;
+}
+
+Heading Highlighter CSS
+selector .elementor-heading-title{
+    position: relative;
+}
+selector:after{
+    position: absolute;
+    content: "";
+    left: 40px;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 130px;
+    height: 70px;
+    background-image: url(IMAGE_URL);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+Auto Shapes Floating Animations
+/*Auto Floating Shapes*/
+.auto-moving1{
+    animation: linear 20s animationFramesOne infinite;
+}
+.auto-moving2{
+    animation: linear 20s animationFramesTwo infinite;
+}
+.auto-moving3{
+    animation: linear 20s animationFramesThree infinite;
+}
+.auto-moving4{
+    animation: linear 20s animationFramesFour infinite;
+}
+.auto-moving5{
+    animation: linear 20s animationFramesFive infinite;
+}
+@keyframes animationFramesOne {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    20% {
+        transform: translate(73px, -1px) rotate(36deg);
+    }
+    40% {
+        transform: translate(141px, 72px) rotate(72deg);
+    }
+    60% {
+        transform: translate(83px, 122px) rotate(108deg);
+    }
+    80% {
+        transform: translate(-40px, 72px) rotate(144deg);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+}
+@keyframes animationFramesTwo {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg) scale(1);
+    }
+    20% {
+        transform: translate(73px, -1px) rotate(36deg) scale(0.9);
+    }
+    40% {
+        transform: translate(141px, 72px) rotate(72deg) scale(1);
+    }
+    60% {
+        transform: translate(83px, 122px) rotate(108deg) scale(1.2);
+    }
+    80% {
+        transform: translate(-40px, 72px) rotate(144deg) scale(1.1);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(0deg) scale(1);
+    }
+}
+@keyframes animationFramesThree {
+    0% {
+        transform: translate(165px, -179px);
+    }
+    100% {
+        transform: translate(-346px, 617px);
+    }
+}
+@keyframes animationFramesFour {
+    0% {
+        transform: translate(-300px, 151px) rotate(0deg);
+    }
+    100% {
+        transform: translate(251px, -200px) rotate(180deg);
+    }
+}
+@keyframes animationFramesFive {
+    0% {
+        transform: translate(61px, -99px) rotate(0deg);
+    }
+    21% {
+        transform: translate(4px, -190px) rotate(38deg);
+    }
+    41% {
+        transform: translate(-139px, -200px) rotate(74deg);
+    }
+    60% {
+        transform: translate(-263px, -164px) rotate(108deg);
+    }
+    80% {
+        transform: translate(-195px, -49px) rotate(144deg);
+    }
+    100% {
+        transform: translate(-1px, 0px) rotate(180deg);
+    }
+}
+
+Hover Lift Animation
+
+/*Hover Lift Animation*/
+selector{
+    transition: all 0.3s ease-out 0s
+}
+selector:hover{
+    transform: translateY(-10px);
+}
+
+
+
+Image Slider Custom Arrows
+
+selector .elementor-swiper-button{
+    position: absolute !important;
+    border: 2px solid #e3e5e8;
+    border-radius: 50%;
+    padding: 3%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 110%;
+    transition: all .5s ease-in-out;
+}
+selector .elementor-swiper-button.elementor-swiper-button-prev{
+    left: 68%
+}
+selector .elementor-swiper-button.elementor-swiper-button-next{
+    right: 8.5%;
+}
+selector .elementor-swiper-button:hover{
+    background: #FF3E66;
+    border: 2px solid #FF3E66;
+    color: #ffffff !important;
+}
+@media screen and (max-width: 1024px) {
+    selector .elementor-swiper-button{
+    top: 110% !important;
+    padding: 2%;
+}
+selector .elementor-swiper-button.elementor-swiper-button-prev{
+    left: 35%
+}
+selector .elementor-swiper-button.elementor-swiper-button-next{
+    right: 35%;
+}
+}
+
+Multi-Line Button Text Format
+
+Download for <br><span class="d-button">iOS</span>
+
+
+
+Download Button CSS
+selector .d-button{
+    font-size: 26px;
+    font-weight: 500;
+}
+selector .elementor-button-icon{
+    font-size: 40px;
+}
+selector .elementor-button-text{
+    text-align: left;
+}
+Card Badge CSS
+selector:after{
+    content: 'Most Popular';
+    background: #2B6EF5;
+    color: #ffffff;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    padding: 3px 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 16px 0px 0px 16px
+}
+Tab Title CSS
+selector .elementor-tabs-wrapper{
+    border: 2px solid #e7eaef;
+    border-radius: 40px;
+    width: 190px;
+    margin: 0 auto;
+    margin-bottom: -20px
+}
+selector .elementor-tab-title{
+    padding: 10px 25px;
+    border-radius: 40px; 
+}
+selector .elementor-tab-title.elementor-active{
+    background: #FF3E66;
+}
+Sticky Header Effect
+/*Header Scrolling Offset*/
+.elementor-sticky--effects{
+    background: #ffffff;
+    box-shadow: 0 15px 30px 0 rgb(0 0 0 / 6%);
+}
